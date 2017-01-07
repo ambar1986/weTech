@@ -54,15 +54,24 @@
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
+	var _elegible = __webpack_require__(178);
+	
+	var _elegible2 = _interopRequireDefault(_elegible);
+	
+	var _howitworks = __webpack_require__(179);
+	
+	var _howitworks2 = _interopRequireDefault(_howitworks);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var App = _react2.default.createClass({
 		displayName: 'App',
 		render: function render() {
 			return _react2.default.createElement(
-				'p',
+				'div',
 				null,
-				'hello world'
+				_react2.default.createElement(_elegible2.default, null),
+				_react2.default.createElement(_howitworks2.default, null)
 			);
 		}
 	});
@@ -21495,6 +21504,107 @@
 	
 	module.exports = ReactDOMInvalidARIAHook;
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ },
+/* 178 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Elegible = _react2.default.createClass({
+		displayName: 'Elegible',
+		render: function render() {
+			return _react2.default.createElement(
+				'div',
+				null,
+				_react2.default.createElement(
+					'h1',
+					null,
+					'Who is Elegible?'
+				),
+				_react2.default.createElement(
+					'h2',
+					null,
+					'As a mentor:'
+				),
+				_react2.default.createElement(
+					'p',
+					null,
+					'As a mentor you will be asked to fill in a profile that will ask for specific technologies ...etc... '
+				),
+				_react2.default.createElement(
+					'h2',
+					null,
+					'As a mentee:'
+				),
+				_react2.default.createElement(
+					'p',
+					null,
+					'You should be a female 18 yo and older who is interested in learning to code, ideally females who are currently programming students...etc... '
+				)
+			);
+		}
+	});
+	
+	exports.default = Elegible;
+
+/***/ },
+/* 179 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var HowItWorks = _react2.default.createClass({
+		displayName: 'HowItWorks',
+		render: function render() {
+			return _react2.default.createElement(
+				'div',
+				null,
+				_react2.default.createElement(
+					'h1',
+					null,
+					'How It Works:'
+				),
+				_react2.default.createElement(
+					'p',
+					null,
+					'Once a a profile has been filled with all the neccesary information, our system will show you the matches for mentor/mentee based on the skillset the mentor posses and the skills the mentee wants to build on.'
+				),
+				_react2.default.createElement(
+					'p',
+					null,
+					'The match will also be based on location/proximity and availability preferences specified when filling the profile.'
+				),
+				_react2.default.createElement(
+					'p',
+					null,
+					'Once the match is made, you will be able to contact each other to set a time to meet and have the mentoring session'
+				)
+			);
+		}
+	});
+	
+	exports.default = HowItWorks;
 
 /***/ }
 /******/ ]);
